@@ -1,0 +1,36 @@
+/* Global styles */
+
+@import 'variables';
+
+body {
+  padding: 1rem;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+code {
+  background: $light-grey;
+  display: block;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+pre {
+  font-family: monospace;
+  white-space: pre-wrap;
+}

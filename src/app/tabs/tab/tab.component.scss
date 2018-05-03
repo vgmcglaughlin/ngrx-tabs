@@ -1,0 +1,27 @@
+// this module shouldn't reach outside of itself for these variable, but since it's a prototype...
+@import 'variables';
+
+:host {
+  display: inline-block;
+}
+
+[role=tab] {
+  background-color: $white;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  color: $primary;
+  padding: 1rem;
+  text-align: center;
+  transition: color, background-color linear 100ms;
+
+  &.selected {
+    background-color: $primary;
+    color: $white;
+  }
+
+  &:hover:not(.selected) {
+    background-color: $primary-light;
+    color: $white;
+    cursor: pointer;
+  }
+}
